@@ -1,0 +1,17 @@
+!pip install scikit -learn
+!pip install --upgrade pixiedust
+!pip install brunel
+!pip install ibm_watson_machine_learning
+
+import pixiedust
+import sklearn
+import pandas as pd 
+from sklearn.ensemble import RandomForestClassifier 
+import numpy as np 
+from sklearn.model_selection import train_test_split 
+from scipy.io import arff 
+import brunel 
+
+from ibm_watson_machine_learning import APIClient
+raw_df=pixiedust.sampleData('https://raw.githubusercontent.com/apischdo/skillsacademy/master/Denormalized%20claims%20data.csv') --extract data
+display(raw_df) --display data
